@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 237, 237);
+}
+
+nav {
+    background-color: rgb(209, 146, 9);
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: white;
+}
+
+.sekcija {
+    margin-bottom: 100px;
+}
+
+.bronzani {
+    border: 1px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+    font-size: 25px; 
+    width: 15%; 
+    text-align: center; 
+    background-color: rgb(205, 127, 50);
+}
+
+.srebrni {
+    border: 1px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+    font-size: 25px; 
+    width: 15%; 
+    text-align: center; 
+    background-color: silver;
+}
+
+.zlatni {
+    border: 1px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+    font-size: 25px; 
+    width: 15%; 
+    text-align: center; 
+    background-color: gold;
+}
+
+#potvrdi {
+    padding: 15px; 
+    border: none; 
+    background-color: green; 
+    color: white; 
+    font-size: 25px; 
+    border-radius: 20px;
+}
+
+#potvrdi:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}

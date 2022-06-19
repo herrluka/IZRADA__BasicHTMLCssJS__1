@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atina</title>
+    <link rel="stylesheet" href="css/css-rezervacija.css" />
+    <script src="js.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="Pocetna.html">Početna</a>
+        <a href="Jovana.html">Jovana</a>
+        <a href="Relja.html">Relja</a>
+        <a class="active">Rezervacija</a>
+        <a href="Kontakt.html">Kontakt</a>
+    </nav>
+
+    <header>
+        <h1 style="text-align: center; font-size: 40px;">Rezervacija sale</h1>
+        <h3 style="width: 50%; margin: auto;text-align: center; font-size: 22px; margin-bottom: 10px;"><i>Jednostavno rezervišite salu za svoju proslavu odabirom željene veličine sale, paketa hrane i pića i datuma. </i></h3>
+        <h3 style="width: 50%; margin: auto;text-align: center; font-size: 18px; color: red;"><b>*cene su prikazane po osobi</b></h3>
+    </header>
+
+    <h1 style="margin-left: 100px;">Veličina sale</h1>
+    <div class="sekcija">
+        <div style=" display: flex; justify-content: space-around; margin-top: 50px;">
+            
+            <div class="bronzani">
+                <h1 style="font-size: 25px">Mala</h1>
+                <span>15 €</span><br />
+                <input type="radio" id="mala-sala" name="sala" value="15">
+            </div>
+            
+            <div class="srebrni">
+                <h1 style="font-size: 25px">Srednja</h1>
+                <span>13 €</span><br />
+                <input type="radio" id="srednja-sala" name="sala" value="13">
+            </div>
+
+            <div class="zlatni">
+                <h1 style="font-size: 25px">Mala</h1>
+                <span>10 €</span><br />
+                <input type="radio" id="velika-sala" name="sala" value="10">
+            </div>
+        
+        </div>
+    
+    </div>
+
+    <h1 style="margin-left: 100px;">Paket hrane</h1>
+    <div class="sekcija">
+    
+        <div style=" display: flex; justify-content: space-around; margin-top: 50px;">
+            
+            <div class="bronzani">
+                <h1 style="font-size: 25px">Bronzani</h1>
+                <span>8 €</span><br />
+                <input type="radio" id="bronzani" name="hrana" value="8">
+            </div>
+            
+            <div class="srebrni">
+                <h1 style="font-size: 25px">Srebni</h1>
+                <span>10 €</span><br />
+                <input type="radio" id="srebrni" name="hrana" value="10">
+            </div>
+
+            <div class="zlatni">
+                <h1 style="font-size: 25px">Zlatni</h1>
+                <span>12 €</span><br />
+                <input type="radio" id="zlatni" name="hrana" value="12">
+            </div>
+
+        </div>
+    
+    </div>
+
+    <h1 style="margin-left: 100px;">Paket pića</h1>
+    <div class="sekcija">
+    
+        <div style=" display: flex; justify-content: space-around; margin-top: 50px;">
+            
+            <div class="srebrni">
+                <h1 style="font-size: 25px">Standard</h1>
+                <span>4 €</span><br />
+                <input type="radio" id="osnovni" name="pice" value="4">
+            </div>
+            
+            <div class="zlatni">
+                <h1 style="font-size: 25px">Premium</h1>
+                <span>8 €</span><br />
+                <input type="radio" id="premium" name="pice" value="8">
+            </div>
+
+        </div>
+    </div>
+
+    <h1 style="margin-left: 100px;">Muzika</h1>
+    <div class="sekcija">
+    
+        <div style=" display: flex; justify-content: space-around; margin-top: 50px;">
+            
+            <div class="zlatni">
+                <h1 style="font-size: 25px">Orkestar <i>Fiesta</i></h1>
+                <span>10 €</span><br />
+                <input type="radio" id="fiesta" name="muzika" value="10">
+            </div>
+            
+            <div class="zlatni">
+                <h1 style="font-size: 25px">Orkestar <i>Atina</i></h1>
+                <span>10 €</span><br />
+                <input type="radio" id="atina" name="muzika" value="10">
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="sekcija" style="text-align: center; font-size:30px ">
+        <label>Izaberite broj gostiju</label><br />
+        <input id="broj-gostiju" min="1" type="number" style="font-size:30px " />
+    </div>
+
+    <div class="sekcija" style="text-align: center; font-size:30px ">
+        <label>Izaberite datum</label><br />
+        <input id="datum" type="date" style="font-size:30px " />
+    </div>
+
+    <div class="sekcija" style="text-align: center;">
+        <button id="potvrdi" onclick="rezervacija()">Rezervišite</button>
+    </div>
+
+    </body>
+</html>

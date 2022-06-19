@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+    font-family: Arial;
+}
+
+#informacije img {
+    width: 13px;
+    height: 13px; 
+    margin-right: 5px;
+}
+
+#drustvene-mreze {
+    width: 30%; 
+    display: inline-block; 
+    text-align: right;
+}
+
+#drustvene-mreze img {
+    width: 60px; 
+    height: 60px; 
+    margin-right: 5px;
+}

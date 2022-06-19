@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rezervisanje sale</title>
+    <link rel="stylesheet" href="css/css-pocetna.css" />
+    <script src="js.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+</head>
+<body onload="initMap()">
+
+<nav>
+    <a class="active">Početna</a>
+    <a href="Jovana.html">Jovana</a>
+    <a href="Relja.html">Relja</a>
+    <a href="Rezervacija.html">Rezervacija</a>
+    <a href="Kontakt.html">Kontakt</a>
+</nav>
+
+<div style="background-image: url('slike/svecanasala.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover; height: 700px;"></div>
+
+<div style="padding-bottom: 50px;">
+    <h1 style="font-size: 50px; text-align: center;">Sevečana sala - Atina</h1>
+
+    <p style="text-align: center; margin-left: 200px; margin-right: 200px; font-size: 30px;"><i>Svečana sala ,,Atina" gostima nudi veliki broj paketa i mogućnost kako bi u najlepšem ambijentu proslavili svoje najbitnije trenutke.</i></p>
+
+    <div id="ponude">
+        
+        <div style="border: 1px solid black; border-radius: 10px; padding: 20px; font-size: 25px; width: 15%; text-align: center; ">
+            <a href="#velicine-sale">Veličina sale</a>
+        </div>
+        
+        <div style="border: 1px solid black; border-radius: 10px; padding: 20px; font-size: 25px;width: 15%; text-align: center;">
+            <a href="#paketi-hrane">Paketi hrane</a>
+         </div>
+
+        <div style="border: 1px solid black; border-radius: 10px; padding: 20px; font-size: 25px;width: 15%; text-align: center;">
+            <a href="#paketi-pica">Paketi pića</a>
+         </div></a>
+
+        <div style="border: 1px solid black; border-radius: 10px; padding: 20px; font-size: 25px;width: 15%; text-align: center;">
+            <a href="#orkestri">Muzika</a>
+         </div>
+    </div>
+
+</div>
+
+<div id="velicine-sale">
+    <h1 style="font-size: 50px; text-align: center;">Veličina sale</h1>
+    <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+
+        <div class="proizvod" style="text-align: center; border: 5px solid 	rgb(205, 127, 50); border-radius: 20px; padding: 20px; width: 20%;">
+            <h1>Mala sala</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Maksimalno 100 gostiju</li>
+                <li>Parking mesta su obezbeđena</li>
+            </ul>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid silver; border-radius: 20px;  padding: 20px; width: 20%;">
+            <h1>Srednja sala</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Do 250 gostiju</li>
+                <li>Određeni broj parking mesta</li>
+                <li>Posebna soba za fotografe i muziku</li>
+            </ul>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid gold; border-radius: 20px;  padding: 20px; width: 20%;">
+            <h1>Velika sala</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Do 500 gostiju</li>
+                <li>Ograničen broj parking mesta</li>
+                <li>Posebna soba za fotografe i muziku</li>
+                <li>Soba za prenoćište + doručak</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div style="margin-top: 50px; margin-bottom: 100px;" id="paketi-hrane">
+    <h1 style="font-size: 50px; text-align: center;">Hrana</h1>
+    <div style="display: flex; justify-content: space-around; margin-top: 50px;" >
+
+        <div class="proizvod" style="text-align: center; border: 5px solid 	rgb(205, 127, 50); border-radius: 20px; padding: 20px; width: 20%;">
+            <h1>Bronzani paket</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Hladno predjelo</li>
+                <li>Roštilj/Svinjetina/Jagnjetina</li>
+            </ul>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid silver; border-radius: 20px;  padding: 20px; width: 20%;">
+            <h1>Srebrni paket</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Hladno predjelo</li>
+                <li>Toplo predjelo</li>
+                <li>Roštilj</li>
+                <li>Svinjetina/Jagnjetina</li>
+            </ul>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid gold; border-radius: 20px;  padding: 20px; width: 20%;">
+            <h1>Zlatni paket</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Hladno predjelo</li>
+                <li>Toplo predjelo</li>
+                <li>Roštilj</li>
+                <li>Svinjetina</li>
+                <li>Jagnjetina</li>
+                <li>Voćni desert</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div style="margin-top: 50px; margin-bottom: 100px;" id="paketi-pica">
+    <h1 style="font-size: 50px; text-align: center;">Piće</h1>
+    <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+
+        <div class="proizvod" style="text-align: center; border: 5px solid 	silver; border-radius: 20px; padding: 20px; width: 20%;">
+            <h1>Standard</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Kafe</li>
+                <li>Sokovi</li>
+                <li>Vina domaćih proizvođača</li>
+                <li>Žestina domaćih proizvođača</li>
+            </ul>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid gold; border-radius: 20px;  padding: 20px; width: 20%;">
+            <h1>Premium</h1>
+            <ul style="text-align: left; font-size: 20px;">
+                <li>Sva pića iz standard paketa</li>
+                <li>Viskiji</li>
+                <li>Vina stranih proizvođača</li>
+                <li>Šampanjci</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div style="margin-top: 50px; margin-bottom: 100px;" id="orkestri">
+    <h1 style="font-size: 50px; text-align: center;">Muzika</h1>
+    <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+
+        <div class="proizvod" style="text-align: center; border: 5px solid 	gold; border-radius: 20px; padding: 20px; width: 40%;">
+            <img src="Slike/fiesta.jpg" width="400" height="200"/>
+            <p style="text-align: center; font-size: 20px;">Bend <i>Fiesta</i></p>
+        </div>
+
+        <div class="proizvod" style="text-align: center; border: 5px solid gold; border-radius: 20px;  padding: 20px; width: 40%;">
+            <img src="Slike/bendatina.jpg" width="400" height="200"/>
+            <p style="text-align: center; font-size: 20px;">Bend <i>Atina</i></p>
+        </div>
+
+    </div>
+</div>
+
+<h1 style="text-align: center; margin-top: 100px;margin-bottom: 100px;">Lokacija sale</h1>
+<div id="map" style="height: 500px; width: 100%;"></div>
+
+</body>

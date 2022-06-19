@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rezervisanje sale</title>
+    <link rel="stylesheet" href="css/css-kontakt.css" />
+    <script src="js.js"></script>
+</head>
+<body>
+
+    <nav>
+        <a href="Pocetna.html">Početna</a>
+        <a href="Jovana.html">Jovana</a>
+        <a href="Relja.html">Relja</a>
+        <a href="Rezervacija.html">Rezervacija</a>
+        <a class="active">Kontakt</a>
+    </nav>
+    
+    <div style="color: white; padding:50px; height: 650px;">
+        <h1 style="text-align: center; font-size: 50px;">Kontakt</h1>
+        <div style="text-align: center;">
+            <form>
+                <label for="ime" style=" font-size: 18px;">Ime i prezime</label> <br />
+                <input type="text" id="ime" style=" font-size: 18px;"><br />
+                <br />
+                
+                <label for="druga" style=" font-size: 18px;">Vaše pitanje:</label><br />
+                <textarea id="tekst-kontakta" rows="5" style="border: none; outline: none; resize: none; width: 50%;"></textarea><br />
+
+                <br />
+
+                <button id="potvrdi" type="button" onclick="kontaktiraj()">
+                    Sačuvaj
+                </button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
